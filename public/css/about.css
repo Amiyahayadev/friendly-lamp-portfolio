@@ -1,0 +1,100 @@
+
+div.container {
+	margin: 1rem 0; /* TO-DO: why is the margim bottom not visible?
+                       Ans: cause this is a modal dialog element
+                    */
+}
+
+/*------ SECTION ONE  ------*/
+.header, .resume {
+	border-bottom: 1px solid var(--lighter-grey);
+	padding-bottom: 2rem;
+}
+
+h2.subtitle {
+	font-size: 1.25rem;
+	color: var(--light-grey);
+}
+p.personal-intro {
+	font-size: 0.835rem;
+	margin-top: 0.5rem;
+}
+ul.personal-info {
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+}
+li > span:first-of-type {
+	/* TO-DO: read more about this selector */
+	color: #000000;
+	font-weight: 600;
+}
+
+.white-btn {
+	background-color: var(--white);
+	border: 1px solid var(--yellow);
+	color: var(--yellow);
+}
+
+/*------ SECTION TWO; resume  ------*/
+.resume > article {
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+	padding-bottom: 1rem;
+	margin-bottom: 1.45em;
+}
+.resume > article:first-of-type {
+	margin-top: 2em;
+}
+.resume > article > div {
+	padding: 0.55rem;
+}
+h3.card-header {
+	font-size: 1.2rem;
+	color: var(--yellow);
+	background-color: var(--lightest-grey);
+	border-bottom: 1px solid var(--lighter-grey);
+	padding: 21px;
+}
+.card-header span {
+	padding-right: 7px;
+}
+.job-type > span {
+	font-weight: 700;
+}
+.date {
+	font-size: 0.75rem;
+	color: var(--faint-grey);
+}
+.yellow-border {
+	border-bottom: 2px solid var(--yellow);
+	padding-top: 19.8px;
+	width: 70px;
+}
+.skills > div {
+    line-height: 1.24 !important;
+}
+.cols {
+    width: 50%;
+}
+.row > span {
+    font-size: 0.82rem;
+}
+p.job-description,
+.rating {
+	font-size: 0.8rem;
+}
+.rating {
+	color: var(--yellow);
+    margin-top: 10px;
+}
+
+/*------ SECTION THREE; summary ------*/
+.summary > div {
+    padding: 1.5rem 0;
+}
+.summary p {
+    font-size: 52.56px;
+}
+.summary h4 {
+    font-size: 1.25rem;
+}

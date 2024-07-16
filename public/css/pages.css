@@ -1,0 +1,55 @@
+body,
+html {
+	min-height: 100% !important;
+}
+body {
+	font-weight: 400;
+	color: var(--light-grey);
+	line-height: 2;
+}
+.wrapper-two {
+	width: 90%;
+	margin: 0 auto;
+	background-color: var(--white);
+}
+.sec-padding {
+	padding: 0.8rem;
+}
+h1.about-title {
+	font-size: 2.05rem;
+	font-weight: 900;
+	padding: 0;
+	margin: 0.7rem;
+	color: var(--dark-grey);
+}
+.hr {
+	padding: 0px 20px 25px;
+}
+.hr > span {
+	display: inline-block;
+}
+.hr > span:nth-child(2) {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.hr .line {
+	border-bottom: 1px solid var(--lighter-grey);
+	vertical-align: middle;
+	width: calc(100% / 4); /* TO-DO: make width fixed */
+}
+.button {
+	padding: 0.5rem 1rem;
+	font-weight: 600;
+	line-height: 1.5;
+	border: none;
+	width: 100%;
+}
+.button > span {
+	/* TO-DO: check why icon in button isn't displaying */
+	padding-left: 15px;
+}
+
+.yellow-btn {
+	background-color: var(--yellow);
+	color: var(--white);
+}

@@ -1,0 +1,70 @@
+.header {
+	padding-top: 1rem;
+}
+address {
+	font-style: normal;
+}
+article.address {
+	background-color: var(--lightest-grey);
+	border: 1px solid var(--lighter-grey);
+	padding: 15px;
+}
+.address p i {
+	color: var(--icon-color);
+	padding-right: 15px;
+}
+.address p {
+	padding: 0.4rem 0;
+}
+article.form {
+	padding-bottom: 2rem;
+}
+article.form h3 {
+	line-height: 1;
+}
+article.form p {
+	font-size: 14px;
+}
+.form-control {
+	position: relative;
+	margin-top: 20px;
+	margin-inline: auto;
+}
+.form-control label {
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	pointer-events: none;
+	transform-origin: left center;
+	transition: transform 250ms;
+}
+textarea {
+	resize: none;
+}
+input,
+textarea {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid var(--lighter-grey);
+	padding: 0.75rem;
+	font-size: 1rem;
+	color: #333;
+	transition: border-color 250ms;
+}
+input:focus,
+textarea:focus {
+	outline: none;
+	border-bottom-color: #777;
+}
+
+input:focus + label,     /*When input has value and focus, move the label above and scale down*/
+textarea:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+	transform: translateY(-100%) scale(0.75);
+}
+
+input::placeholder, textarea::placeholder {
+	color: transparent;
+}
