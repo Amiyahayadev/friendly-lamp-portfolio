@@ -14,9 +14,9 @@
 * {
 	box-sizing: border-box;
 }
-/* .dbug {
+.dbug {
     border: 1px solid red;
-} */
+}
 body,
 html {
 	width: 100%;
@@ -62,7 +62,7 @@ body {
 .d-block {
 	display: block;
 }
-.hidden {
+.hidden-sm-and-med {
 	display: none;
 }
 .margin-b1 {
@@ -115,7 +115,7 @@ main.wrapper {
 }
 .first-container,
 .navLinks,
-header,
+.header-home,
 .second-container {
 	flex: 1;
 }
@@ -174,9 +174,27 @@ h1 {
 	.col-s-width {
 		min-width: 40% !important;
 	}
-	header,
+	.header-home,
 	.navLinks {
 		height: 50%;
-		max-height: 340px;
+		max-height: 350px;
 	}
+}
+@media screen and (min-width: 994px) {
+    .hidden-sm-and-med {
+        display: block;
+    }
+    .first-container {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .img-container {
+        width: 25%;
+        background-image: url(../assets/portfolio-image-unsplash.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    .second-container {
+        width: 75%;
+    }
 }

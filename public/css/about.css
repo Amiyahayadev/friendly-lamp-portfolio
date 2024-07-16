@@ -1,10 +1,4 @@
 
-div.container {
-	margin: 1rem 0; /* TO-DO: why is the margim bottom not visible?
-                       Ans: cause this is a modal dialog element
-                    */
-}
-
 /*------ SECTION ONE  ------*/
 .header, .resume {
 	border-bottom: 1px solid var(--lighter-grey);

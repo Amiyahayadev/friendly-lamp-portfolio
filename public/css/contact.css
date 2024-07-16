@@ -1,4 +1,4 @@
-.header {
+.header-contact {
 	padding-top: 1rem;
 }
 address {
@@ -67,4 +67,36 @@ textarea:not(:placeholder-shown) + label {
 
 input::placeholder, textarea::placeholder {
 	color: transparent;
+}
+
+/*------------------ Media Queries ---------------------- */
+@media screen and (min-width: 601px) {
+    section.article {
+        display: flex;
+        gap: 1rem;
+    }
+    .form-control {
+        margin-bottom: 2rem;
+    }
+    article.address {
+        height: 100%;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 994px) {
+     .two-column-wrap {
+        display: flex;
+        gap: 1rem;
+    }
+    .img-container {
+        width: 33.33%;
+    }
+    .scrollable-dialog {
+        width: 66.66%;
+        padding: 0 1rem;
+    }
+    section.article {
+        gap: 1.5rem;
+    }
 }
