@@ -27,6 +27,7 @@ h1.about-title {
 	font-weight: 900;
 	padding: 0;
 	margin: 0.7rem;
+    text-transform: uppercase;
 	color: var(--dark-grey);
 }
 .hr {
@@ -59,4 +60,9 @@ h1.about-title {
 .yellow-btn {
 	background-color: var(--yellow);
 	color: var(--white);
+}
+@media screen and (min-width: 994px){
+    h1.about-title {
+        font-size: 3.4rem;
+    }
 }

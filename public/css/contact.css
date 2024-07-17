@@ -28,7 +28,7 @@ article.form p {
 .form-control {
 	position: relative;
 	margin-top: 20px;
-	margin-inline: auto;
+	margin-left: 32px;
 }
 .form-control label {
 	display: block;
@@ -38,6 +38,14 @@ article.form p {
 	pointer-events: none;
 	transform-origin: left center;
 	transition: transform 250ms;
+}
+.pre-icon {
+	font-size: 22px;
+	position: absolute !important;
+	top: 8px;
+	left: -32px;
+	color: var(--icon-color);
+	transition: color 250ms ease;
 }
 textarea {
 	resize: none;
@@ -58,45 +66,57 @@ textarea:focus {
 	border-bottom-color: #777;
 }
 
-input:focus + label,     /*When input has value and focus, move the label above and scale down*/
+/*When input has value and focus, move the label above and scale down*/
+input:focus + label,
 textarea:focus + label,
 input:not(:placeholder-shown) + label,
 textarea:not(:placeholder-shown) + label {
 	transform: translateY(-100%) scale(0.75);
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
 	color: transparent;
 }
 
+/* chnage icon color on focus - TO FIX */
+
+/*
+SOCIAL LINKS
+-     background: #dd4b39 RED
+-     background: #3b5998; face book
+-     background: #1da1f2;; twitter
+-     background: #0077b5; linkedIn
+*/
+
 /*------------------ Media Queries ---------------------- */
 @media screen and (min-width: 601px) {
-    section.article {
-        display: flex;
-        gap: 1rem;
-    }
-    .form-control {
-        margin-bottom: 2rem;
-    }
-    article.address {
-        height: 100%;
-        line-height: 1.5;
-    }
+	section.article {
+		display: flex;
+		gap: 1.2rem;
+	}
+	.form-control {
+		margin-bottom: 2rem;
+	}
+	article.address {
+		height: 100%;
+		min-width: 250px;
+	}
 }
 
 @media screen and (min-width: 994px) {
-     .two-column-wrap {
-        display: flex;
-        gap: 1rem;
-    }
-    .img-container {
-        width: 33.33%;
-    }
-    .scrollable-dialog {
-        width: 66.66%;
-        padding: 0 1rem;
-    }
-    section.article {
-        gap: 1.5rem;
-    }
+	.two-column-wrap {
+		display: flex;
+		gap: 1rem;
+	}
+	.img-container {
+		width: 33.33%;
+	}
+	.scrollable-dialog {
+		width: 66.66%;
+		padding: 0 1rem;
+	}
+	section.article {
+		gap: 1.5rem;
+	}
 }
