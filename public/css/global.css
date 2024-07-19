@@ -179,7 +179,7 @@ h1 {
 	}
 	.header-home,
 	.navLinks {
-		height: 50%;
+		height: 46% !important;
 		max-height: 350px;
 	}
 }
