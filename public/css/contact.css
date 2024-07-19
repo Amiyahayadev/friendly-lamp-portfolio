@@ -103,7 +103,7 @@ SOCIAL LINKS
 	}
 }
 
-@media screen and (min-width: 994px) {
+@media screen and (min-width: 992px) {
 	.two-column-wrap {
 		display: flex;
 		gap: 1rem;

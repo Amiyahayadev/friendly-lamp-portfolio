@@ -5,6 +5,15 @@
 	padding-bottom: 2rem;
 }
 
+img {
+    max-width: 100%;
+}
+.long-profile-pic {
+    display: none;
+}
+.authors-info {
+    padding-top: 1rem;
+}
 h2.subtitle {
 	font-size: 1.25rem;
 	color: var(--light-grey);
@@ -91,4 +100,52 @@ p.job-description,
 }
 .summary h4 {
     font-size: 1.25rem;
+}
+
+/*------------ Media queries ------------*/
+@media (max-width: 992px) and (min-width: 601px) {
+    .small-profile-pic, .authors-info {
+        float: left;
+    }
+    .small-profile-pic {
+        width: 33.33%;
+    }
+    .authors-info {
+        width: 66.66%;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+    }
+    .resume {
+        clear: both;
+        border-top: 1px solid var(--lighter-grey);
+    }
+    .header {
+        border-bottom: none;
+    }
+}
+@media  screen and (min-width: 993px) {
+     .two-column-wrap {
+        display: flex;
+        gap: 1rem;
+    }
+    .small-profile-pic {
+        display: none;
+    }
+    .sec-padding {
+        padding: 1.2rem;
+    }
+    .authors-info {
+        padding-bottom: 1rem;
+    }
+    .long-profile-pic {
+        display: block;
+        width: 25%;
+        background: var(--white);
+        background-image: url(https://res.cloudinary.com/durufresj/image/upload/profile-img-large_n3ssvp.jpg);
+        background-size: cover;
+        background-position: right center;
+    }
+    .scrollable-dialog {
+        width: 75%;
+    }
 }

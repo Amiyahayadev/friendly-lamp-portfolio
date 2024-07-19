@@ -11,15 +11,22 @@
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 		</style>
-
+		<!-- <link
+			rel="preload"
+			href="https://res.cloudinary.com/durufresj/image/upload/profile-img-large_n3ssvp.jpg"
+			as="image" /> -->
 		<link rel="stylesheet" href="../css/normalize.css" />
 		<link rel="stylesheet" href="../css/global.css" />
-        <link rel="stylesheet" href="../css/pages.css">
+		<link rel="stylesheet" href="../css/pages.css" />
 		<link rel="stylesheet" href="../css/about.css" />
 		<title>About me</title>
 	</head>
 	<body>
 		<main class="wrapper-two">
+            <div class="two-column-wrap">
+
+			<!-- Hide desktop layout component -->
+			<section class="long-profile-pic"></section>
 			<div class="scrollable-dialog">
 				<section class="header sec-padding">
 					<h1 class="about-title text-center">
@@ -31,82 +38,100 @@
 							class="fa-solid fa-address-card fa-lg yellow-text"></span
 						><span class="line"></span>
 					</div>
-					<img
-						src="#"
-						alt="Author's photo"
-						class="d-block" />
-					<h2 class="subtitle">
-						<span class="fa-solid fa-user fa-sm"></span>
-						PERSONAL INFO
-					</h2>
-					<p class="personal-intro margin-b1">
-						I'm a Freelance Web Designer & Developer
-						based in Abuja, Nigeria, I have serious
-						passion for UI effects, animations and
-						creating intuitive, with over a decade of
-						experience.
-					</p>
-					<ul class="personal-info margin-b-5">
-						<li>
-							<span>First Name:</span>&nbsp;<span
-								>Amina</span
-							>
-						</li>
-						<li>
-							<span>Last Name:</span>&nbsp;<span
-								>Yahaya</span
-							>
-						</li>
-						<li>
-							<span>Date of birth:</span>&nbsp;<span
-								>3 September 2020</span
-							>
-						</li>
-						<li>
-							<span>Nationality:</span>&nbsp;<span
-								>Nigerian</span
-							>
-						</li>
-						<li>
-							<span>Freelance:</span>&nbsp;<span
-								>Available</span
-							>
-						</li>
-						<li>
-							<span>Phone:</span>&nbsp;<span
-								>+32 23 16 80 30</span
-							>
-						</li>
-						<li>
-							<span>Address:</span>&nbsp;<span
-								>Abuja, Nigeria</span
-							>
-						</li>
-						<li>
-							<span>Email:</span>&nbsp;<span
-								>you@examplewebsite.com</span
-							>
-						</li>
-						<li>
-							<span>Spoken Langages:</span
-							>&nbsp;<span>English - Arabic</span>
-						</li>
-						<li>
-							<span>Skype:</span>&nbsp;<span
-								>dev.ami</span
-							>
-						</li>
-					</ul>
-					<button
-						class="button d-block margin-b1 yellow-btn">
-						DOWNLOAD RESUME<span
-							class="fa-thin fa-file-pdf fa-xs"></span>
-					</button>
-					<button class="button d-block white-btn">
-						MY BLOG
-						<span
-							class="fa-thin fa-pen-to-square fa-xs yellow-text"></span>
-					</button>
+					<div class="small-profile-pic">
+						<picture>
+							<source
+								media="(max-width: 600px)"
+								srcset="
+									../assets/profile-pic580.jpg 580w
+								" />
+							<source
+								media="(max-width: 480px)"
+								srcset="
+									../assets/profile-pic480.jpg 480w
+								" />
+
+							<img
+								src="../assets/profile-pic580.jpg"
+								alt="Author's photo"
+								class="d-block" />
+						</picture>
+					</div>
+
+					<div class="authors-info">
+						<h2 class="subtitle">
+							<span
+								class="fa-solid fa-user fa-sm"></span>
+							PERSONAL INFO
+						</h2>
+						<p class="personal-intro margin-b1">
+							I'm a Freelance Web Designer &
+							Developer based in Dubai, UAE, I
+							have serious passion for UI effects,
+							animations and creating intuitive,
+							with over a decade of experience.
+						</p>
+						<ul class="personal-info margin-b-5">
+							<li>
+								<span>First Name:</span
+								>&nbsp;<span>Amina</span>
+							</li>
+							<li>
+								<span>Last Name:</span
+								>&nbsp;<span>Yahaya</span>
+							</li>
+							<li>
+								<span>Date of birth:</span
+								>&nbsp;<span
+									>3 September 2000</span
+								>
+							</li>
+							<li>
+								<span>Nationality:</span
+								>&nbsp;<span>Nigerian</span>
+							</li>
+							<li>
+								<span>Freelance:</span
+								>&nbsp;<span>Available</span>
+							</li>
+							<li>
+								<span>Phone:</span>&nbsp;<span
+									>+32 23 16 80 30</span
+								>
+							</li>
+							<li>
+								<span>Address:</span>&nbsp;<span
+									>Dubai, UAE</span
+								>
+							</li>
+							<li>
+								<span>Email:</span>&nbsp;<span
+									>you@examplewebsite.com</span
+								>
+							</li>
+							<li>
+								<span>Spoken Langages:</span
+								>&nbsp;<span
+									>English - Arabic</span
+								>
+							</li>
+							<li>
+								<span>Skype:</span>&nbsp;<span
+									>dev.ami</span
+								>
+							</li>
+						</ul>
+						<button
+							class="button d-block margin-b1 yellow-btn">
+							DOWNLOAD RESUME<span
+								class="fa-thin fa-file-pdf fa-xs"></span>
+						</button>
+						<button class="button d-block white-btn">
+							MY BLOG
+							<span
+								class="fa-thin fa-pen-to-square fa-xs yellow-text"></span>
+						</button>
+					</div>
 				</section>
 				<section class="resume sec-padding">
 					<article>
@@ -300,7 +325,8 @@
 							<p>
 								<i
 									class="fa-solid fa-briefcase lightest-grey-text"></i>
-								<span class="yellow-text d-block lato-bold"
+								<span
+									class="yellow-text d-block lato-bold"
 									>4+</span
 								>
 							</p>
@@ -310,7 +336,8 @@
 							<p>
 								<i
 									class="fa-regular fa-handshake lightest-grey-text"></i>
-								<span class="yellow-text d-block lato-bold"
+								<span
+									class="yellow-text d-block lato-bold"
 									>89+</span
 								>
 							</p>
@@ -320,7 +347,8 @@
 							<p>
 								<i
 									class="fa-regular fa-heart lightest-grey-text"></i>
-								<span class="yellow-text d-block lato-bold"
+								<span
+									class="yellow-text d-block lato-bold"
 									>77+</span
 								>
 							</p>
@@ -329,6 +357,7 @@
 					</div>
 				</section>
 			</div>
+            </div>
 		</main>
 	</body>
 </html>
