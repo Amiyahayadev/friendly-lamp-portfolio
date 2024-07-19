@@ -45,7 +45,6 @@ article.form p {
 	top: 8px;
 	left: -32px;
 	color: var(--icon-color);
-	transition: color 250ms ease;
 }
 textarea {
 	resize: none;

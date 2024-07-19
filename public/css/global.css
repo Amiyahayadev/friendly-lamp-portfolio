@@ -190,7 +190,7 @@ h1 {
     }
     .img-container {
         width: 25%;
-        background-image: url(../assets/portfolio-image-unsplash.jpg);
+        background-image: url(https://res.cloudinary.com/durufresj/image/upload/web-dev-images/portfolio-image-unsplash_hdz6xm.jpg);
         background-size: cover;
         background-position: center center;
     }
