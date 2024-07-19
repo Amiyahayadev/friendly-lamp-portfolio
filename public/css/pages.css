@@ -53,13 +53,17 @@ h1.about-title {
 	width: 100%;
 }
 .button > span {
-	/* TO-DO: check why icon in button isn't displaying */
 	padding-left: 15px;
 }
 
 .yellow-btn {
 	background-color: var(--yellow);
 	color: var(--white);
+}
+@media screen and (max-width: 400px) {
+    h1.about-title {
+        font-size: 1.55rem;
+    }
 }
 @media screen and (min-width: 994px){
     h1.about-title {
